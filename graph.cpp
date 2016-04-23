@@ -116,5 +116,5 @@ graph* makeGraph(int v , int e){
         temp->e[i] = makeEdge(temp->v[sour] , temp->v[dest] , wei);
 
     }
-
+	return temp;
   }
