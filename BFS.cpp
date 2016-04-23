@@ -45,13 +45,13 @@ int main()
     cin>>i;
     cout<<"Enter no. of edges you want in graph"<<endl;
     cin>>j;
-    graph *g = new graph;
+    graph *g;
     g = makeGraph(i,j);
     cout<<"Enter the Source vertex:-- "<<endl;
     cin>>k;
     BFS(g , g->v[k]);
     cout<<"Printing the results:-- "<<endl;
-    for(i = 0 ; i < k ; k++ )
+    for(i = 0 ; i < g -> noofvertex ; i++ )
     {
         cout<<"vertex no.-- "<<i<<" Distance from "<<k<<" "<<" is --->>> "<<g->v[i]->d<<endl;
     }
